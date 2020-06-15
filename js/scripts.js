@@ -1,4 +1,57 @@
-// Bussiness Logic for AddressBook
+//business logic for places you've been
+function PlacesUHaveBeen(){
+  this.places = [];
+  this.placeId = 0;
+}
+PlacesUHaveBeen.prototype.addPlace = function(place){
+  place.id = this.addId();
+  this.places.push(place);
+}
+PlacesUHaveBeen.prototype.addId = function(){
+  this.placeId += 1;
+  return this.placeId;
+}
+PlacesUHaveBeen.prototype.findPlace = function(id){
+  for (let i=0; i< this.places.length; i++){
+    if (this.places[i].id == id){
+      return this.places[i];
+    }
+  };
+return false;
+}
+//business logic for places
+function Place (cityName, countryName, landMark){
+  this.cityName = cityName;
+  this.countryName = countryName;
+  this.landMark = landMark;
+}
+Place.prototype.fullLists = function() {
+  return this.cityName + " " + this.countryName;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Bussiness Logic for AddressBook
 function AddressBook() {
   this.contacts = [];
   this.currentId = 0;
