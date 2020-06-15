@@ -10,7 +10,10 @@ We are working on JavaScript to build the Bussiness logic about the place you've
 ## Behavior Driven Development
 | Behavior | Input | Output |
 | -------- | ----- | ------ |
-| 
+| program takes an ID number, returns a username| 02 | Place |
+| program creates a unique ID for each contact name | Place | 02 |
+| program lists all user names | Place You've Been | City Name, Country Name, Land Mark, etc |
+| program stores info for each contact, first name, last name, phone number | Jane, Doe, 555-2125 | Jane Doe 555-2125|
 
 ## Setup/Installation Requirements
 
